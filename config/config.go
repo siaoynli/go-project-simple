@@ -2,9 +2,10 @@ package config
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
-	"time"
 )
 
 var Cfg = &Config{}
@@ -34,7 +35,10 @@ type App struct {
 	ReadTimeout     time.Duration `mapstructure:"read_timeout"`
 	WriteTimeout    time.Duration `mapstructure:"write_timeout"`
 	RuntimeRootPath string        `mapstructure:"runtime_root_path"`
-	AppLogPath      string        `mapstructure:"app_log_path"`
+	LogPath         string        `mapstructure:"log_path"`
+	LogMaxSize      int           `mapstructure:"log_max_size"`
+	LogMaxBackups   int           `mapstructure:"log_max_backups"`
+	LogMaxAge       int           `mapstructure:"log_max_age"`
 }
 
 type Mysql struct {

@@ -36,9 +36,9 @@ func init() {
 func InitLog() {
 	// 初始化 logger
 	global.LOG = logger.InitLogger(
-		//logger.WithDisableConsole(),
+		logger.WithDisableConsole(),
 		logger.WithTimeLayout(timeutil.CSTLayout),
-		logger.WithFileRotationP(config.Cfg.App.AppLogPath),
+		logger.WithFileRotationP(&logger.LogOptions{}),
 	)
 }
 func initMysqlClient() {
