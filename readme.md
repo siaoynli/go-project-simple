@@ -12,3 +12,6 @@
 - 支持 [go-redis](https://github.com/go-redis/redis/v7) 组件
 - 支持 RESTful API 返回值规范
 - 支持 生成数据表 CURD、控制器方法 等代码生成器
+
+运行:
+air
