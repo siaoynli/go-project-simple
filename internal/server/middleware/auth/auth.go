@@ -1,6 +1,8 @@
 package auth
 
 import (
+	"strings"
+
 	"github.com/gin-gonic/gin"
 	"github.com/siaoynli/go-project-simple/config"
 	"github.com/siaoynli/go-project-simple/global"
@@ -10,7 +12,6 @@ import (
 	"github.com/siaoynli/go-project-simple/internal/server/api/api_response"
 	"github.com/siaoynli/go-project-simple/internal/service/auth_service"
 	"github.com/siaoynli/pkg/logger"
-	"strings"
 )
 
 /**

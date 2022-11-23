@@ -85,7 +85,7 @@ type Prome struct {
 func LoadConfig() {
 	viper := viper.New()
 	//1.设置配置文件路径
-	viper.SetConfigFile("config/config.yml")
+	viper.SetConfigFile("../config/config.yml")
 	//2.配置读取
 	if err := viper.ReadInConfig(); err != nil {
 		panic(err)
