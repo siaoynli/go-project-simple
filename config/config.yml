@@ -10,7 +10,7 @@ app:
 mysql:
   dbname: shop
   user: root
-  password: admin123
+  password: 673cF2PKyS7drfyxW78F
   host: localhost:3306
   max_open_conn: 1000
   max_idle_conn: 100
@@ -20,13 +20,13 @@ mysql:
 mongodb:
     dbname: shop
     user: admin
-    password: admin123
+    password: LjKpc4gm6b6KwJ6XStnr
     host: ["127.0.0.1:27017"]
 
 elasticsearch:
   host: ["https://127.0.0.1:9200"]
   user: elastic
-  password: elastic
+  password: x5aWayy2Q4ga7HCT
   bulk_action_num: 1000
   bulk_action_size: 20480
   bulk_workers_num: 10
@@ -34,7 +34,7 @@ elasticsearch:
 redis:
   host: 127.0.0.1:6379
   db: 0
-  password:
+  password: 3wbU2ZkhwH2RFiux
   min_idle_conn: 500
   pool_size: 100
   max_retries: 3

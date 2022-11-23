@@ -31,7 +31,7 @@ func init() {
 	initRedisClient()
 	initMongoClient()
 	initESClient()
-	initProme()
+	// initProme()
 }
 func InitLog() {
 	// 初始化 logger
@@ -55,6 +55,7 @@ func initRedisClient() {
 	redisCfg := config.Cfg.Redis
 	opt := redis.Options{
 		Addr:         redisCfg.Host,
+		Password:     redisCfg.Password,
 		DB:           redisCfg.DB,
 		MaxRetries:   redisCfg.MaxRetries,
 		PoolSize:     redisCfg.PoolSize,
