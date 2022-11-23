@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-redis/redis/v7"
+	"github.com/go-redis/redis/v8"
 	"github.com/siaoynli/go-project-simple/config"
 	"github.com/siaoynli/go-project-simple/global"
 	"github.com/siaoynli/go-project-simple/internal/server/api"
